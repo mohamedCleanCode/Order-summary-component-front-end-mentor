@@ -1,0 +1,105 @@
+:root {
+  --primary: #0d1a2d;
+  --bg-content: #14273e;
+  --light-green: #2db3b4;
+  --light: #fff;
+  --transition: all 0.4s linear;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.4 linear;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+.container {
+  border-radius: 8px;
+  width: 350px;
+  height: 580px;
+  margin: 22px auto;
+  border-radius: 8px;
+  background-color: var(--light);
+  box-shadow: 0px 0px 6px #00000094;
+  cursor: pointer;
+}
+.container .image {
+  width: 100%;
+}
+.container .image svg {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.container .info {
+  padding: 20px 30px;
+  text-align: center;
+}
+.container .info .title {
+  color: var(--primary);
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container .info .text {
+  line-height: 1.4;
+  color: silver;
+  margin-bottom: 20px;
+}
+.container .info .plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c0c0c078;
+  border-radius: 18px;
+  padding: 5px 15px;
+}
+.container .info .plan .plan-text {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .info .plan .plan-text span:first-child {
+  color: var(--primary);
+  font-weight: bold;
+}
+.container .info .plan .plan-text span:last-child {
+  color: silver;
+}
+.container .info .plan .plan-choose {
+  font-weight: bold;
+}
+.container .info .plan .plan-choose:hover {
+  opacity: 0.6;
+}
+.container .info .actions {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .info .actions button {
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container .info .actions .payment {
+  margin-bottom: 10px;
+  background-color: #0000ffcc;
+  color: white;
+}
+.container .info .actions .payment:hover {
+  opacity: 0.6;
+}
+.container .info .actions .cancel {
+  color: #0000ffcc;
+  background-color: var(--light);
+  font-weight: bold;
+}
+.container .info .actions .cancel:hover {
+  color: var(--primary);
+}
